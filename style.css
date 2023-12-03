@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700;900&display=swap');
+/*font-family: 'League Spartan', sans-serif;*/
+
+
+:root {
+    --DarkGray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
+}
+
+*,
+.container-fluid,
+p,
+.row {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 12px;
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
+}
+
+.col-12,
+.col-lg-7,
+.col-lg-5 {
+    padding: 0px;
+}
+
+
+#room #first .col-12 article {
+    width: 87%;
+    height: 100%;
+}
+
+#room #first .col-lg-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.container-fluid {
+    height: 100%;
+}
+
+#room #first {
+    height: 800px;
+}
+
+
+#room #first .row {
+    height: 60vh;
+    position: relative;
+}
+
+@media only screen and (min-width:768px) {
+    #room #first {
+        height: 1300px;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #room #first {
+        height: 65vh;
+    }
+
+    #room #first .row {
+        height: 100%;
+
+    }
+
+    #room #first .col-lg-5 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #room #first .col-12 article {
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    #room #first .col-lg-5 {
+        padding-top: 9%;
+        padding-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    #room #first {
+        height: 64.5vh;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+
+    #room #first {
+        height: 65vh;
+    }
+
+
+    #room #first .col-lg-5 {
+        padding-top: 9%;
+        padding-bottom: 5%;
+    }
+
+    .row>* {
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width:1536px) {
+    #room #first .col-lg-5 {
+        padding-top: 9%;
+        padding-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    #room #first .col-lg-5 {
+        padding-top: 8%;
+        padding-bottom: 5%;
+    }
+}
+
+
+/*hero */
+
+#room #first .hero {
+    background-image: url("./images/mobile-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.navbar {
+    --bs-navbar-color: white;
+    padding-left: 1.5rem;
+    padding-top: 2.5rem;
+}
+
+.collapse {
+    padding-top: .3rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("./images/icon-hamburger.svg");
+    height: 1.5rem;
+    width: 1.5rem;
+
+}
+
+.navbar-brand {
+    margin-right: 10rem;
+}
+
+.navbar-brand img {
+    vertical-align: middle;
+    height: .94rem;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--White);
+}
+
+.nav-item {
+    padding-right: 1rem;
+    font-size: .9rem;
+}
+
+@media only screen and (min-width:576px) {
+    .navbar {
+        padding-left: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .navbar-brand {
+        margin-right: 18rem;
+    }
+
+
+    .navbar-brand img {
+        height: 1.2rem;
+    }
+
+    .navbar-toggler-icon {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .navbar {
+        padding-left: 1.9rem;
+        padding-top: 3rem;
+    }
+
+    .navbar-brand {
+        margin-right: 23.5rem;
+    }
+
+
+    .navbar-brand img {
+        height: 1.4rem;
+    }
+
+    .navbar-toggler-icon {
+        height: 1.9rem;
+        width: 1.9rem;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .navbar .navbar-nav .nav-item {
+        position: relative;
+    }
+
+    .navbar .navbar-nav .nav-item::after {
+        position: absolute;
+        bottom: 0;
+        left: -18%;
+        right: 0;
+        margin: 0 auto;
+        content: "";
+        background-color: rgb(255, 255, 255);
+        width: 0%;
+        height: 2px;
+        transition: all 0.5s;
+    }
+
+    .navbar .navbar-nav .nav-item:hover::after {
+        width: 40%;
+    }
+
+
+
+
+
+
+
+    #room #first .hero {
+        background-image: url("./images/desktop-image-hero-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navbar {
+        padding-left: 2.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .navbar-brand {
+        margin-right: 2rem;
+    }
+
+
+    .navbar-brand img {
+        height: .8rem;
+    }
+
+    .nav-item {
+        padding-right: 0.5rem;
+        font-size: .65rem;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+    .navbar {
+        padding-left: 3.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .navbar-brand {
+        margin-right: 3.5rem;
+    }
+
+
+    .navbar-brand img {
+        height: .8rem;
+    }
+
+    .nav-item {
+        padding-right: 0.9rem;
+        font-size: .8rem;
+    }
+
+}
+
+@media only screen and (min-width:1440px) {
+
+    .navbar {
+        --bs-navbar-color: white;
+        padding-left: 4.8rem;
+        padding-top: 3rem;
+    }
+
+    .navbar-brand {
+        margin-right: 4rem;
+    }
+
+    .navbar-brand img {
+        height: 1rem;
+    }
+
+    .nav-item {
+        padding-right: 1rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (min-width:1920px) {
+
+    .navbar {
+        --bs-navbar-color: white;
+        padding-left: 6rem;
+        padding-top: 5rem;
+    }
+
+    .navbar-brand {
+        margin-right: 5rem;
+    }
+
+    .navbar-brand img {
+        height: 1.2rem;
+    }
+
+    .nav-item {
+        padding-right: 1.8rem;
+        font-size: 1.3rem;
+    }
+
+}
+
+/*Hero Right Text Area*/
+
+#room #first #homeHead {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -.13rem;
+    line-height: 2.6rem;
+}
+
+#room #first .articleText {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--DarkGray);
+    font-size: 1.02rem;
+    letter-spacing: -.01rem;
+    line-height: 1.65rem;
+    padding-bottom: 1.7rem;
+}
+
+#room #first .shop {
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: .7rem;
+}
+
+#room #first .shop:hover {
+    filter: opacity(0.5);
+}
+
+#room #first .shop p {
+    display: inline;
+}
+
+#room #first .shop img {
+    width: 2.7rem;
+}
+
+
+@media only screen and (min-width:576px) {
+    #room #first #homeHead {
+        font-size: 3.5rem;
+        letter-spacing: -.2rem;
+        line-height: 3.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #room #first .articleText {
+        font-size: 1.55rem;
+        line-height: 2rem;
+        padding-bottom: 3rem;
+    }
+
+
+    #room #first .shop {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;
+
+    }
+
+    #room #first .shop p {
+        display: inline;
+    }
+
+
+    #room #first .shop img {
+        width: 3.5rem;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    #room #first #homeHead {
+        font-size: 5rem;
+        letter-spacing: -.2rem;
+        line-height: 4.2rem;
+        padding-bottom: 1rem;
+    }
+
+    #room #first .articleText {
+        font-size: 2.07rem;
+        line-height: 2.8rem;
+        padding-bottom: 2rem;
+    }
+
+
+    #room #first .shop {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;
+
+    }
+
+    #room #first .shop p {
+        display: inline;
+    }
+
+
+    #room #first .shop img {
+        width: 3.5rem;
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+
+    #room #first #homeHead {
+        font-size: 2.2rem;
+        letter-spacing: -.1rem;
+        line-height: 2.3rem;
+    }
+
+    #room #first .articleText {
+        font-size: .70rem;
+        padding-bottom: 1rem;
+        line-height: 1rem;
+    }
+
+
+    #room #first .shop {
+        font-size: .8rem;
+        letter-spacing: .8rem;
+    }
+
+    #room #first .shop p {
+        display: inline;
+    }
+
+
+    #room #first .shop img {
+        width: 3.5rem;
+    }
+
+}
+
+@media only screen and (min-width:1280px) {
+    #room #first #homeHead {
+        font-size: 2.8rem;
+        letter-spacing: -.1rem;
+        line-height: 2.7rem;
+    }
+
+    #room #first .articleText {
+        font-size: .9rem;
+        padding-bottom: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+
+    #room #first .shop {
+        font-size: .9rem;
+        letter-spacing: .8rem;
+    }
+
+    #room #first .shop p {
+        display: inline;
+    }
+
+
+    #room #first .shop img {
+        width: 2.5rem;
+    }
+
+}
+
+@media only screen and (min-width:1440px) {
+
+    #room #first #homeHead {
+        font-size: 3.4rem;
+        letter-spacing: -.2rem;
+        line-height: 3rem;
+        padding-bottom: 1.4rem;
+    }
+
+    #room #first .articleText {
+        font-size: .98rem;
+        padding-bottom: 1.7rem;
+    }
+
+
+    #room #first .shop {
+        font-size: .9rem;
+        letter-spacing: .7rem;
+    }
+
+    #room #first .shop p {
+        display: inline;
+    }
+
+
+    #room #first .shop img {
+        width: 2.5rem;
+    }
+
+
+}
+
+@media only screen and (min-width:1536px) {
+    #room #first #homeHead {
+        font-size: 3.6rem;
+
+    }
+
+    #room #first .articleText {
+        font-size: 1.08rem;
+        padding-bottom: 2rem;
+    }
+
+
+    #room #first .shop {
+        font-size: .9rem;
+        letter-spacing: .7rem;
+    }
+
+    #room #first .shop p {
+        display: inline;
+    }
+
+
+    #room #first .shop img {
+        width: 2.5rem;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    #room #first #homeHead {
+        font-size: 4.5rem;
+        line-height: 4.3rem;
+        padding-bottom: 2rem;
+    }
+
+    #room #first .articleText {
+        font-size: 1.35rem;
+        padding-bottom: 2.5rem;
+        line-height: 2.2rem;
+    }
+
+
+    #room #first .shop {
+        font-size: 1.3rem;
+        letter-spacing: .7rem;
+    }
+
+    #room #first .shop p {
+        display: inline;
+    }
+
+
+    #room #first .shop img {
+        width: 3rem;
+    }
+}
+
+
+/*Slider navigator*/
+
+
+#room #first .sliderNav {
+    background-color: var(--Black);
+    width: 8rem;
+    height: 3.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0rem;
+    right: 0px;
+}
+
+#room #first .sliderNav img {
+    width: .8rem;
+    height: 1.1rem;
+}
+
+#room #first .sliderNav button {
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    height: 100%;
+}
+
+#room #first .sliderNav button:hover {
+    background-color: var(--DarkGray);
+}
+
+@media only screen and (min-width:576px) {
+    #room #first .sliderNav {
+        width: 12rem;
+        height: 6rem;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    #room #first .sliderNav img {
+        width: 1.1rem;
+        height: 1.8rem;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #room #first .sliderNav {
+        width: 12rem;
+        height: 6rem;
+    }
+
+}
+
+@media only screen and (min-width:992px) {
+
+    #room #first .hero {
+        position: relative;
+    }
+
+
+    #room #first .sliderNav {
+        width: 7.5rem;
+        height: 3.5rem;
+        bottom: 0px;
+        right: 0px;
+        transform: translate(100%, 0px);
+    }
+
+    #room #first .sliderNav img {
+        width: .7rem;
+        height: 1.2rem;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    #room #first .sliderNav {
+        width: 8.1rem;
+        height: 4.5rem;
+    }
+}
+
+@media only screen and (min-width:1366px) {
+    #room #first .sliderNav {
+        width: 8.7rem;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    #room #first .sliderNav {
+        width: 10rem;
+        height: 5rem;
+    }
+
+    #room #first .sliderNav img {
+        width: 1rem;
+        height: 1.4rem;
+    }
+}
+
+@media only screen and (min-width:1536px) {
+    #room #first .sliderNav {
+        width: 10.4rem;
+    }
+
+}
+
+@media only screen and (min-width:1920px) {
+    #room #first .sliderNav {
+        width: 11.5rem;
+        height: 5.5rem;
+    }
+
+}
+
+/*SECOND SECTION*/
+#room #second {
+    height: 885px;
+}
+
+#room #second .row {
+    height: 100%;
+    position: relative;
+}
+
+#room #second .container-fluid {
+    height: 100%;
+}
+
+#room #second .col-lg-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+
+#room #second .col-12 article {
+    width: 85%;
+    height: 100%;
+}
+
+#room #second h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    line-height: 2.6rem;
+}
+
+#room #second .articleText {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--DarkGray);
+    font-size: 1rem;
+    letter-spacing: -.01rem;
+    line-height: 1.65rem;
+}
+
+
+
+@media only screen and (min-width:768px) {
+    #room #second .col-lg-3 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #room #second h1 {
+        font-size: 1.8rem;
+        letter-spacing: .7rem;
+        line-height: 2.6rem;
+        padding-bottom: 2rem;
+    }
+
+    #room #second .articleText {
+        font-size: 2rem;
+        letter-spacing: -.01rem;
+        line-height: 3rem;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    #room #second {
+        height: 35vh;
+    }
+
+    #room #second .col-lg-3 {
+        width: 29.5%;
+    }
+
+    #room #second .col-lg-6 {
+        padding-top: 4%;
+        padding-bottom: 4%;
+        width: 41%;
+    }
+
+    #room #second h1 {
+        font-size: .7rem;
+        letter-spacing: .2rem;
+        line-height: normal;
+        padding-bottom: 0.2rem;
+    }
+
+    #room #second .articleText {
+        font-size: .7rem;
+        letter-spacing: -.01rem;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    #room #second .col-lg-3 {
+        width: 31.5%;
+    }
+
+    #room #second .col-lg-6 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 37%;
+    }
+
+    #room #second h1 {
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
+        line-height: normal;
+        padding-bottom: .5rem;
+    }
+
+    #room #second .articleText {
+        font-size: .8rem;
+        letter-spacing: -.01rem;
+        line-height: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width:1366px) {
+    #room #second .col-lg-6 {
+        padding-top: 4.5%;
+        padding-bottom: 4.5%;
+        width: 37%;
+    }
+
+    #room #second .articleText {
+        font-size: .85rem;
+        letter-spacing: -.01rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+
+    #room #second .col-lg-3 {
+        width: 30.5%;
+    }
+
+    #room #second .col-lg-6 {
+        padding-top: 6%;
+        padding-bottom: 5%;
+        width: 39%;
+    }
+
+    #room #second h1 {
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        line-height: normal;
+        padding-bottom: .5rem;
+    }
+
+    #room #second .articleText {
+        font-size: .95rem;
+        letter-spacing: -.01rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:1536px) {
+
+    #room #second .col-lg-3 {
+        width: 31%;
+    }
+
+    #room #second .col-lg-6 {
+        padding-top: 5%;
+        padding-bottom: 4%;
+        width: 38%;
+    }
+
+    #room #second h1 {
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        line-height: normal;
+        padding-bottom: .5rem;
+    }
+
+    #room #second .articleText {
+        font-size: .98rem;
+        letter-spacing: -.01rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+
+    #room #second .col-lg-3 {
+        width: 32%;
+    }
+
+    #room #second .col-lg-6 {
+        padding-top: 5.5%;
+        padding-bottom: 4%;
+        width: 36%;
+    }
+
+    #room #second h1 {
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        line-height: normal;
+        padding-bottom: .5rem;
+    }
+
+    #room #second .articleText {
+        font-size: 1.17rem;
+        letter-spacing: -.01rem;
+        line-height: 1.8rem;
+    }
+}
